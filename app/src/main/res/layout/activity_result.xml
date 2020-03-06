@@ -7,18 +7,32 @@
     tools:context=".ResultActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="40sp"
+        android:id="@+id/winnerView"
+        android:layout_width="286dp"
+        android:layout_height="147dp"
         android:layout_marginTop="20dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/scorerView"
+        android:layout_width="286dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="44dp"
+        android:text="scorer"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerView" />
+
+    <TextView
+        android:id="@+id/resultview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name Of Winning Team"
@@ -27,6 +41,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/winnerView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

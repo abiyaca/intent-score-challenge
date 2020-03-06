@@ -23,6 +23,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_home"
         app:srcCompat="@mipmap/ic_launcher_round" />
@@ -38,7 +39,7 @@
         android:id="@+id/score_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:hint="0"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Home Score"
+        android:onClick="handleHscore"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,6 +75,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_away"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/ic_launcher" />
 
@@ -80,7 +83,7 @@
         android:id="@+id/score_away"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:hint="0"
         android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/away_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Add Away Score"
+        android:onClick="handleAscore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -101,10 +105,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cek Hasil"
+        android:onClick="handleResult"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_homeS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="home scorer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toEndOf="@+id/home_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_awayS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="away scorer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toEndOf="@+id/away_logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
